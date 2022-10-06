@@ -14,4 +14,4 @@ Feature: Como cliente de SwagLabs
 
     Examples:
       |nombre|user|pass|msg_home|
-      |Jose|standard_user|secret_sauce|PRODUCTOS|
+      |Jose|standard_user|secret_sauce|Products|

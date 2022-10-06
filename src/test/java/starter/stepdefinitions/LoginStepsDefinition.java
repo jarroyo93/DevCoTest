@@ -19,7 +19,7 @@ public class LoginStepsDefinition {
     @Given("^Que (.*) este en la app de SWAGLABS$")
     public void queEsteEnLaAppDeSwagLabs(String nombre){theActorCalled(nombre).wasAbleTo(NavigateTo.theSwagLabsHomePage());}
 
-    @When("^Diligencie el formulario de ingreso$")
+    @When("^Diligencie el formulario de ingreso con (.*) y (.*)$")
     public void queDiligenciaElFormularioDeIngreso(String user, String pass){
         theActorInTheSpotlight().attemptsTo(HaceLogin.correctamenteEnLaApp(user, pass));
     }
