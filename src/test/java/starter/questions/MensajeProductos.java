@@ -16,6 +16,8 @@ public class MensajeProductos implements Question<String> {
         actor.attemptsTo(
                 WaitUntil.the(MSGLOGIN, WebElementStateMatchers.isPresent()).forNoMoreThan(15).seconds()
         );
-        return Text.of(MSGLOGIN).answeredBy(actor);
+
+        String mensaje = MSGLOGIN.resolveFor(actor).getText();
+        return MSGLOGIN.resolveFor(actor).getText();
     }
 }

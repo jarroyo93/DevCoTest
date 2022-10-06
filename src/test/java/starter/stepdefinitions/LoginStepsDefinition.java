@@ -24,7 +24,7 @@ public class LoginStepsDefinition {
         theActorInTheSpotlight().attemptsTo(HaceLogin.correctamenteEnLaApp(user, pass));
     }
 
-    @Then("^Verá el mensaje de (.*)$")
+    @Then("^Vera el mensaje de (.*)$")
     public void veraElmensaje(String msg){
         theActorInTheSpotlight().should(
                 seeThat(MensajeProductos.EnHome(), equalTo(msg))
