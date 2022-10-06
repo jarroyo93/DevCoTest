@@ -5,8 +5,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 
 public class NavigateTo {
-    public static Performable theWikipediaHomePage() {
+    public static Performable theSwagLabsHomePage() {
         return Task.where("{0} opens the Wikipedia home page",
-                Open.browserOn().the(WikipediaHomePage.class));
+                Open.browserOn().the(SwagLabsHomePage.class));
     }
 }
